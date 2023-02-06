@@ -1,0 +1,255 @@
+@import 'https:/fonts.googleapis.com/css?family=Lato:400,700';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: 450;
+    color: white;
+    font-size: larger;
+}
+li{
+    list-style: none;
+}
+#page-wrapper{
+    position: relative;
+}
+#header-img{
+    height: 100%;
+    object-fit: cover;
+    width: 280px;
+}
+#nav-bar{
+    height: 70px;
+    width:100vw; 
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
+#nav-bar ul{
+    margin-left: auto;
+    padding-right: 20px;
+}
+.navigation{
+    display: inline-block;
+    margin: auto;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+.nav-link{
+    text-decoration: none;
+    color: rgb(238, 148, 193);
+}
+.grid {
+    display: flex;
+}
+#info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#info h2{
+    margin-top: 120px;
+    word-wrap: break-word;
+}
+#form input[type='email']{
+    max-width: 295px;
+    width:100%;
+    padding: 5px;
+    margin-top: 15px;
+}
+#form input[type='submit']{
+    max-width: 110px;
+    display:inline-flex;
+    width: 100%;
+    padding: 6px;
+    border: 0rem;
+    margin: 15px 0;
+    background-color: rgb(238, 148, 193);
+}
+.btn{
+    height: 30px;
+    max-width: 110px;
+    width: 100%;
+    padding: auto;
+    height: 30px;
+    cursor: pointer;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    width: 15vw ;
+    color:rgb(238, 148, 193);
+    margin-top: 15px;
+    margin: 10px;
+    padding: 45px 0 45px 0;
+}
+#feature{
+    margin: 50px auto;
+}
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content:justify;
+    height: 135px;;
+    width: 75vw;
+    margin: 1rem 0rem auto;
+}
+.fok{
+    max-width: 300px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left:29dvw;
+    height: 350px;
+    margin-top: 10vh;
+}
+#pricing{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1.5px solid rgb(51, 15, 33);
+    border-radius: 3px;
+    text-align:left;
+}
+.product > .level {
+    background-color: rgb(51, 15, 33);
+    width: 100%;
+    font-weight: 700;
+    padding: 15px 0;
+}
+.product > h2 {
+    margin-top: 15px;
+}
+.product > ul {
+    margin: 35px;
+}
+.product > ul > li {
+    padding: 15px 0;
+}
+.product > .btn {
+    border: 0px;
+    font-weight: 600;
+    margin: 10px 0;
+    background-color: rgb(51, 15, 33);
+}   
+.product > .btn > a{
+    text-decoration: none;
+    color: rgb(238, 148, 193);
+    text-align: center;
+}    
+footer {
+    margin-top: 30px;
+    padding: 15px;
+}
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+footer > ul > li {
+    padding: 0 1rem;
+}
+footer a {
+    text-decoration: none;
+    color: rgb(238, 148, 193);;
+}
+footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color:white;
+}
+@media (max-width:750px) {
+    .icon{
+        display: none;
+    }
+    #video{
+        justify-content: center;
+        width:90vw ;
+        margin-top: 150px ;
+        height: 300px;
+        display: flex;
+        margin-bottom: 0;
+
+    }
+    .fok{
+        margin: 3dvw;
+        justify-content: center;
+        align-items: center;
+    } 
+    .navigation{
+    display:grid;
+    margin: auto;
+    padding: 5px;
+    height: 20px;
+    }
+    .nav-link{
+    text-align: center;
+    }
+}
+@media (max-width:750px) {
+    #header-img{
+        justify-content: center;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+@media (max-width:750px) { 
+    .desc{
+        width: 90vw;
+        text-align: center;
+        padding: 0;
+        height: 150px auto;
+        margin: 8vh;
+    }
+    .desc h2{
+        text-align:center;
+    }
+    #pricing{
+        display: block;
+        width:180dvw;
+        justify-content: center;
+    }
+    .product{
+        margin: 5vw 20vw 20vw;
+    }
+}
+@media (max-width:900px) {
+    #video{
+        justify-content: center;
+        width:90vw ;
+        margin-top: 150px ;
+        height: 300px;
+        display: flex;
+        margin-bottom: 0;
+
+    }
+    .fok{
+        margin: 3dvw;
+        justify-content: center;
+        align-items: center;
+    } 
+}
+@media only screen and (max-width: 600px) {
+    #nav-bar{
+        position:fixed;
+    }
+}
